@@ -1,0 +1,30 @@
+{
+  "name": "enginy",
+  "displayName": "Enginy",
+  "version": "1.0.0",
+  "description": "Find and reach B2B contacts. Build targeted lead lists, enrich contacts, write outreach, launch campaigns, handle replies, and analyze results with Enginy.",
+  "author": {
+    "name": "Enginy",
+    "email": "support@enginy.ai",
+    "url": "https://enginy.ai"
+  },
+  "homepage": "https://enginy.ai",
+  "repository": "https://github.com/Genesy-AI/enginy-claude-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "b2b",
+    "sales",
+    "prospecting",
+    "lead-generation",
+    "outbound",
+    "enrichment",
+    "campaigns"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "icon": "./assets/enginy-logo.png",
+  "documentationUrl": "https://docs.enginy.ai/mcp/overview",
+  "supportUrl": "https://enginy.ai/contact",
+  "privacyPolicyUrl": "https://enginy.ai/privacy-policy",
+  "termsOfServiceUrl": "https://enginy.ai/terms-of-service"
+}
