@@ -200,7 +200,7 @@ The breakup line is used verbatim as the last line of Email 3.
 
 Use **Enginy single-brace placeholders** in subjects and bodies — e.g. `{firstName}`,
 `{companyName}`. Exact placeholder names are workspace-specific: discover them with
-`get_contact_field_metadata` (pass `search` to look one up) rather than guessing. Never
+`get_contact_field_metadata` (using its `search` argument to look one up) rather than guessing. Never
 invent a placeholder that doesn't exist in the workspace, and never fake personalization
 in prose ("as a VP of X you must have Y problem").
 

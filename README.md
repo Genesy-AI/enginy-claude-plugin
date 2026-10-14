@@ -101,6 +101,8 @@ If tools are missing, connect Enginy from the plugin's Connectors tab and check 
 
 ## Source and version
 
-The skill files are copied unchanged from Enginy's skill source at commit `c9e2fa0124c76a160ab9fff24a2095d47f05de6a`. This includes the 38 skill names shown in the existing OpenAI listing plus `outbound-campaign-architect`, which is referenced by other skills and is part of the Enginy Skills Library. The OpenAI release export contains listing metadata but not its imported skill snapshot, so byte-for-byte equivalence to that snapshot has not been asserted.
+The skill files originate from Enginy's skill source at commit `c9e2fa0124c76a160ab9fff24a2095d47f05de6a`. This includes the 38 skill names shown in the existing OpenAI listing plus `outbound-campaign-architect`, which is referenced by other skills and is part of the Enginy Skills Library. The OpenAI release export contains listing metadata but not its imported skill snapshot, so byte-for-byte equivalence to that snapshot has not been asserted.
+
+Three copywriting skills clarify that `search` is a tool argument, avoiding a scanner misinterpretation of the word “pass” as a credential-manager command. Their behavior is unchanged.
 
 The Claude manifest and MCP configuration adapt distribution to Claude; the server endpoint remains unchanged. The package retains the existing Enginy plugin's `UNLICENSED` designation; no new open-source license is granted.

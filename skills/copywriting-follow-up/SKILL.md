@@ -302,7 +302,7 @@ Never reference a resource, case study, or asset that hasn't been explicitly pro
 ## Personalization (Enginy placeholders)
 
 Use **Enginy single-brace placeholders** — e.g. `{firstName}`, `{companyName}`. Exact
-names are workspace-specific: confirm them with `get_contact_field_metadata` (pass `search`)
+names are workspace-specific: confirm them with `get_contact_field_metadata` (using its `search` argument)
 rather than guessing — an invalid placeholder renders as literal text in the sent email.
 For a **researched per-prospect line** (e.g. a new signal since email 1), that's an AI
 variable: use `create_an_ai_variable` or the `ai-research-builder` skill, then reference it
