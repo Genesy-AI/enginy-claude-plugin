@@ -11,7 +11,8 @@ description: >
   For a single standalone email use copywriting-first-touch; for one ad-hoc bump use
   copywriting-follow-up. Can pull prospect context from Enginy and push the finished
   sequence into a campaign.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Copywriting — 3-Email Sequence (seniority-calibrated)

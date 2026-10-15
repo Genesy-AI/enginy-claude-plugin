@@ -7,7 +7,8 @@ description: >-
   "score this contact against our ICP", "how well does this prospect fit",
   "grade my list against our ideal customer profile", or "enrich and qualify these
   contacts".
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Enrich and Score Lead

@@ -9,7 +9,8 @@ description: >
   angle, new value, or a new lens. Produces one follow-up email per call, calibrated
   for the position in the sequence. For a full multi-email sequence written from scratch,
   use copywriting-sequence; use this skill for standalone or ad-hoc follow-ups.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Copywriting — Follow-Up After No Reply

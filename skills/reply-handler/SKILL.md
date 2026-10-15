@@ -8,7 +8,8 @@ description: >
   "not interested reply", "next step after reply", "competitor objection", "pricing question",
   or "how do I respond to this email/LinkedIn message". Always use this skill before writing or
   sending any reply to a prospect in Enginy.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Reply Handler — Turn replies into relationships
@@ -214,8 +215,8 @@ Before suggesting any response:
 - **`archive_inbox_contact_thread` is lead-level** — it archives *all* visible threads for that
   contact, not just one channel. Only archive genuinely dead threads.
 - **Host requirements**: needs a connected Enginy inbox (email and/or LinkedIn identity) and an
-  API key with `MESSAGING_READ`/`MESSAGING_WRITE`, `BLOCKLIST_WRITE`, `CAMPAIGNS_WRITE`, and
-  `TASKS_WRITE` scopes.
+  Enginy connection with the `MESSAGING_READ`/`MESSAGING_WRITE`, `BLOCKLIST_WRITE`,
+  `CAMPAIGNS_WRITE`, and `TASKS_WRITE` scopes.
 - If a tool is rejected for permissions after the user already authorized, it's usually the MCP
   session re-running OAuth instead of reusing its token — run `mcp_whoami` to confirm, see
   https://docs.enginy.ai/mcp/security-troubleshooting.

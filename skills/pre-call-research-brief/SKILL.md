@@ -6,7 +6,8 @@ description: >-
   "build a pre-call brief", "research this prospect before my meeting", "what do
   I need to know before I talk to this account", "give me talking points for this
   contact", or "get me ready for the demo with this company".
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Pre-Call Research Brief

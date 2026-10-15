@@ -10,7 +10,8 @@ description: >
   linkedin_voice_message) when the user wants it built and launched. Always produces a
   complete 2-message LinkedIn sequence calibrated for the platform's conversational
   context and character constraints.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # LinkedIn DM Sequence — Post-Connection

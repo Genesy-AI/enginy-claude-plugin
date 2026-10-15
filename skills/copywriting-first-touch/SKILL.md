@@ -9,7 +9,8 @@ description: >
   any product, any seniority level. Always produces one polished first-touch email
   with subject line, body, and a sequence bridge if needed. For a full multi-email
   sequence use copywriting-sequence; for a follow-up after no reply use copywriting-follow-up.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Copywriting — First Touch Email

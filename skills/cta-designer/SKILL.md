@@ -9,7 +9,8 @@ description: >
   message or what to offer prospects. Always use this skill before writing or finalizing
   any outreach CTA. This skill replaces generic "book a call" CTAs with Permissionless
   Value Promises that make prospects respond out of genuine interest, not obligation.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # CTA Designer — Permissionless Value Promise (PVP)

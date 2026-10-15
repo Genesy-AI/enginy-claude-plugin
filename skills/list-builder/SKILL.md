@@ -9,7 +9,8 @@ description: >
   potential customers.
   This skill does NOT find leads directly — it decides targeting strategy and hands off
   execution to build-targeted-lead-list. Always use before build-targeted-lead-list.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # List Builder — Translate your ICP into an Enginy targeting strategy

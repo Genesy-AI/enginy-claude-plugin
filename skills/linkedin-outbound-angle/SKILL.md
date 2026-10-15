@@ -9,7 +9,8 @@ description: >
   this prospect", or "what's the best hook for this LinkedIn profile".
   Always asks for company context, ICP, and value prop before analyzing.
   Produces a prioritized angle recommendation with ready-to-use outreach hooks.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # LinkedIn Outbound Angle Analyzer

@@ -8,7 +8,8 @@ description: >
   step model (email, LinkedIn, voice, conditions, delays, tasks), validation, audience assignment,
   and activation — never activating without explicit user confirmation. Routes to
   copywriting-*, outbound-campaign-architect, and campaign-performance-analyzer.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Launch Campaign — design to live in Enginy

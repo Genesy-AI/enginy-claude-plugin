@@ -9,7 +9,8 @@ description: >
   workspaces with the AI split, this creates AI Research; on workspaces still on the legacy
   system, the same flow creates an AI Variable — same tool, same behavior. For AI-written
   outreach messages use ai-message-builder; for reusable copy fragments use ai-snippet-builder.
-version: 1.2.2
+metadata:
+  version: "1.2.2"
 ---
 
 # AI Research Builder — scaled per-record research & personalization fields

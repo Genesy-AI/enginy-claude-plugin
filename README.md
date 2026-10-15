@@ -6,9 +6,9 @@ This plugin bundles 39 Enginy skills and the Enginy remote MCP connector. An Eng
 
 ## Connect and use
 
-Install the plugin in Claude, then open its Connectors tab and connect Enginy with your own account through OAuth. The server is `https://openapi.enginy.ai/mcp`, the same endpoint used by the Enginy connector. If Enginy is already connected, reuse that connection.
+Add Enginy from **Customize > Plugins** in Claude, then open the plugin's **Connectors** tab and connect Enginy with your own account through OAuth. The server is `https://openapi.enginy.ai/mcp`, the same endpoint used by the Enginy connector. If Enginy is already connected, reuse that connection.
 
-In Claude Code, test a checkout with `claude --plugin-dir ./enginy-claude-plugin`. Validate the files with `claude plugin validate ./enginy-claude-plugin`. The plugin contains Markdown skills, JSON configuration, and a logo; no install scripts, hooks, executables, or embedded credentials.
+In Claude Code, a plugin added on claude.ai syncs automatically, and `/plugin directory` lists Enginy too. The plugin contains Markdown skills, JSON configuration, and a logo; no install scripts, hooks, executables, or embedded credentials.
 
 ## Example requests
 
@@ -21,7 +21,7 @@ Skills retain their existing confirmation steps before sending messages, activat
 
 ## Data handling and optional services
 
-Enginy tools can read and create or update personal data in your workspace, including names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements; it does not promise deletion within 30 days.
+Enginy tools can read and create or update personal data in your workspace, including names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements, not for a fixed period such as 30 days.
 
 Only the Enginy connector is bundled. Some skills can use additional services when requested and available in the user's Claude environment:
 
@@ -98,11 +98,6 @@ If tools are missing, connect Enginy from the plugin's Connectors tab and check 
 | `team-performance-review` | Side-by-side rep and sender scorecard |
 | `persona-insights-analysis` | Persona intelligence from call transcripts |
 
+## License
 
-## Source and version
-
-The skill files originate from Enginy's skill source at commit `c9e2fa0124c76a160ab9fff24a2095d47f05de6a`. This includes the 38 skill names shown in the existing OpenAI listing plus `outbound-campaign-architect`, which is referenced by other skills and is part of the Enginy Skills Library. The OpenAI release export contains listing metadata but not its imported skill snapshot, so byte-for-byte equivalence to that snapshot has not been asserted.
-
-Three copywriting skills clarify that `search` is a tool argument, avoiding a scanner misinterpretation of the word “pass” as a credential-manager command. Their behavior is unchanged.
-
-The Claude manifest and MCP configuration adapt distribution to Claude; the server endpoint remains unchanged. The package retains the existing Enginy plugin's `UNLICENSED` designation; no new open-source license is granted.
+The plugin is proprietary (`UNLICENSED`); no open-source license is granted. Use of Enginy is subject to its [Terms of service](https://enginy.ai/terms-of-service).

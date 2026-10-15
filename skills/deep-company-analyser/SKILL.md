@@ -8,7 +8,8 @@ description: >
   "what do customers say about us", "why do people buy from us", "customer insights for [company]",
   "competitive positioning research", or "find customer language for messaging".
   Use this BEFORE defining ICP/personas — it reveals what customers actually care about.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Deep Company Analyser — Understand why customers really buy

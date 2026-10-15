@@ -9,7 +9,8 @@ description: >
   "what do competitors offer", "differentiate from X in outreach", "block companies using [competitor]",
   or "find companies using [competitor] to target".
   Always use this skill before writing competitive positioning or handling competitor objections.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Competitor Finder — Map the competitive landscape and act on it

@@ -1,7 +1,8 @@
 ---
 name: team-performance-review
 description: Compare reps and senders on outreach activity and outcomes using live Enginy data — pulls per-identity campaign analytics, conversation outcomes, and task discipline into a side-by-side scorecard with coaching notes. Use when asked "compare my reps", "how is my team doing", "who's my top performer", "which SDR is underperforming", "team performance review", "rep scorecard", "who has the most overdue tasks", "compare sender performance", or "how do my senders stack up". Fetches identities, task owners, campaigns per sender, campaign analytics, conversation outcomes, and task counts. Honest about the CRM boundary — Enginy sees outreach and tasks, not closed-won revenue.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Team Performance Review

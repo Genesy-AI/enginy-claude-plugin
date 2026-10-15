@@ -10,7 +10,8 @@ description: >
   "value proposition for outreach", "how do I explain what we do", "turn features into benefits",
   or "write a one-liner for my product". Use after ICP and persona are defined, before writing
   outreach copy.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Offer Definer — From raw materials to ready-to-send offers

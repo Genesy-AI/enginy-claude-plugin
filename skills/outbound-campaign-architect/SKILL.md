@@ -8,7 +8,8 @@ description: >
   "what steps should I use", "how should I structure my outreach", or "help me reach out to X".
   Also trigger when the user mentions an ICP + a goal (e.g. "I want to book meetings with VP
   Sales at Series B SaaS"). Always use this skill before any sequence is written or built.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Outbound Campaign Architect
@@ -294,8 +295,8 @@ it next with the new campaign's ID. Do not assign contacts or flip campaign stat
 - **Never call contact-assignment or `update_campaign_status`-style tools from this skill** —
   that's `launch-campaign`'s job, keeping sequence design and activation as separate,
   reviewable steps.
-- Host requirement: needs an Enginy API key with `CAMPAIGNS_WRITE` (and `OWNERS_READ` if the
-  sequence includes `task` steps).
+- Host requirement: needs an Enginy connection with the `CAMPAIGNS_WRITE` scope (and
+  `OWNERS_READ` if the sequence includes `task` steps).
 - For UI-level navigation or deeper detail, point the user to https://docs.enginy.ai rather
   than hardcoding menu paths.
 

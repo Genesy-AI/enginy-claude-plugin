@@ -7,7 +7,8 @@ description: >
   "outbound targeting", "who gets most value", "segment customers", "narrow audience",
   "prioritize accounts", "who should we reach out to", or "build me an outbound ICP".
   Always use this skill before building any list or writing any outreach.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # ICP Definer — Who is going to buy from you
