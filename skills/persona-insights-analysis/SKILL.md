@@ -9,7 +9,8 @@ description: >
   a connected call-recording MCP (e.g. Claap, Modjo, Gong, Chorus, Fireflies). Always produces
   a full persona report with goals, pains, objections, feature requests, verbatims, buying
   signals, and strategic recommendations.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Persona Insights Analysis

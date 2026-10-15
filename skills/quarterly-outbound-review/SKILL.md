@@ -9,7 +9,8 @@ description: >
   "how's my whole outbound doing", "build my Q_ outbound plan", "outbound strategy review",
   "what should I focus on next quarter", or "audit my entire outbound motion". Broader than a
   single-campaign audit — this is the account-level strategy pass.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Quarterly Outbound Review — Diagnose the motion, plan the quarter

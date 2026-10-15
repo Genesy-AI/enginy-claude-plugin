@@ -12,7 +12,8 @@ description: >
   to reach out", timing outreach, "they just raised", "they just hired", "they changed jobs",
   job postings, funding rounds, tech stack changes, LinkedIn activity, or any event-based
   prospecting. Use it even if the user just says "when should I reach out to X".
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Trigger Finder — Outbound Timing & Signal Interpretation

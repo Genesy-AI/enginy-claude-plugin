@@ -9,7 +9,8 @@ description: >
   the workspace has the AI split enabled, and falls back automatically to a legacy AI Variable
   when it doesn't. For stored research facts use ai-research-builder; for reusable copy
   fragments use ai-snippet-builder.
-version: 1.2.1
+metadata:
+  version: "1.2.1"
 ---
 
 # AI Message Builder — AI-written outreach messages per contact

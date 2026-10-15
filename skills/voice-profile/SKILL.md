@@ -9,7 +9,8 @@ description: >
   sound like AI", "make my emails sound like me", "define my tone of voice", or "train the
   copywriting skills on how I write". Foundation for copywriting-sequence, copywriting-first-touch,
   copywriting-follow-up, meeting-follow-up, and reply-handler.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Voice Profile — Make every AI draft sound like one person

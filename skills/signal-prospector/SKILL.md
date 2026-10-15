@@ -7,7 +7,8 @@ description: >-
   recently funded companies", "who's showing buying signals in my market",
   "build a list off a trigger event", or "find companies expanding and get me the
   right person to contact".
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Signal Prospector

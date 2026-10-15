@@ -8,7 +8,8 @@ description: >
   and some context before writing emails. Pulls persona and prospect context directly
   from Enginy when a real contact or company is named. Always produces exactly 3
   differentiated angles with rationale, campaign hook, and pain focus for each.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Campaign Angle Finder

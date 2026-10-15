@@ -10,7 +10,8 @@ description: >
   with [signal]", or "data sources for [use case]".
   Do NOT use for individual contact data, email verification, or CRM/tool functionality
   questions.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Niche Data Finder — Find where your prospects are hiding

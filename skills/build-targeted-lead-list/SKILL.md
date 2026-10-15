@@ -8,7 +8,8 @@ description: >
   companies that [signal]". Also handles querying EXISTING CRM/Enginy data when the user wants records
   already in the workspace rather than net-new sourcing. Routes to icp-definer, enrich-and-score-lead,
   and launch-campaign as needed.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Build Targeted Lead List — source prospects end to end in Enginy
@@ -141,7 +142,7 @@ When the user wants records already in the workspace, skip AI Finder:
 ## Examples
 
 **Example 1 — Signal-driven contact list**
-User: "Build me a list of Heads of Sales at Series B SaaS companies in the US that raised in the last 90 days." → confirm contacts + criteria → `create_a_list` (CONTACTS) → `preview_an_ai_finder_search` (auto-route, or LINKEDIN) with the full query → `fetch_results` shows ~9,000 (too broad) → `refine` "only companies that announced funding in the last 90 days" → new preview ~1,400, samples fit → user approves → `import_an_ai_finder_preview` (listId, maxCount 1500) → poll status → offer email enrichment (quote credits, confirm) → route to launch-campaign.
+User: "Build me a list of Heads of Sales at Series B SaaS companies in the US that raised in the last 90 days." → confirm contacts + criteria → `create_a_list` (CONTACTS) → `preview_an_ai_finder_search` (auto-route, or LINKEDIN) with the full query → `fetch_results_from_an_ai_finder_preview` shows ~9,000 (too broad) → `refine_an_ai_finder_preview` "only companies that announced funding in the last 90 days" → new preview ~1,400, samples fit → user approves → `import_an_ai_finder_preview` (listId, maxCount 1500) → poll status → offer email enrichment (quote credits, confirm) → route to launch-campaign.
 
 **Example 2 — Too narrow, then right-sized**
 User: "Find Series A fintech founders in NYC using Plaid." → preview returns 11 → too narrow → `refine` "drop the location constraint" → ~520, samples check out → import → done.

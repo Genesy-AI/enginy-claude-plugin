@@ -1,7 +1,8 @@
 ---
 name: campaign-performance-analyzer
 description: Pull and diagnose real outbound campaign performance from your Enginy account — no need to type your stats, this skill fetches them. Use when asked "how is my campaign doing", "analyze my campaign", "why am I not getting replies", "is my reply rate good", "which of my campaigns performs best", "compare my campaigns", "audit my outbound", "my campaign is underperforming", "what's wrong with my sequence", "is X% good for cold email", or any request to evaluate live outreach performance. Fetches campaigns, campaign analytics, and conversation outcomes, verdicts each metric against benchmarks, finds the root cause, and hands off fixes to the right sibling skill.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Campaign Performance Analyzer

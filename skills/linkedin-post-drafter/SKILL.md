@@ -8,7 +8,8 @@ description: >
   "post idea about X", or "rewrite this so it doesn't sound like AI". Pulls persona/pain context
   from your ICP work or a real contact when the post targets a specific segment, and applies your
   voice profile if you have one set up.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # LinkedIn Post Drafter — One idea, four beats, zero AI smell

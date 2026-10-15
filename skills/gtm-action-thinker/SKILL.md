@@ -9,7 +9,8 @@ description: >
   do you think about this", "help me think through this campaign", or "is this a good
   GTM move". Always challenges assumptions, identifies blind spots, and produces a
   concrete execution plan alongside the creative expansion.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # GTM Action Thinker

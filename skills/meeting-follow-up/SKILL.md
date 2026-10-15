@@ -8,7 +8,8 @@ description: >
   after the call", "recap and next steps", "summarize the demo and what's next", or "they
   want a summary of what we discussed". Pulls the Enginy thread for context when the prospect
   lives in Enginy, and sends only after explicit confirmation.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Meeting Follow-up — Recap, then who does what

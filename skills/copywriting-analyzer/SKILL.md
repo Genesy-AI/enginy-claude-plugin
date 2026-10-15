@@ -10,7 +10,8 @@ description: >
   further instruction. Also use when a campaign is named directly (e.g. "audit my Series B
   campaign") — pull the live copy from Enginy first. Always produces an audit or scorecard
   plus a rewritten version of the copy.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Copywriting Analyzer — Quality Audit, Scoring & Rewrite

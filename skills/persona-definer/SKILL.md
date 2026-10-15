@@ -8,7 +8,8 @@ description: >
   "who is the decision maker", "who has this pain", "which title to reach out to",
   "should I target VPs or Directors", or "contact-level targeting".
   Use AFTER ICP is defined (ICP = which companies, Persona = which person at those companies).
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Persona Definer — Who is the actual human buyer

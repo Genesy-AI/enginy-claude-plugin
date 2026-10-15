@@ -9,7 +9,8 @@ description: >
   "why would [company] buy", "what problems does [company] face", "qualify this lead",
   "account research for [company]", "help me personalize outreach to [company]",
   or "what signals should I mention in my email to [company]".
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Pain Identifier — Uncover what keeps them up at night

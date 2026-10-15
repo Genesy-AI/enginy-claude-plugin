@@ -9,7 +9,8 @@ description: >
   schedule the resulting call as an Enginy task or a campaign step. Always produces a
   full script following the 6-part framework: opener, permission-based framing, 3 pain
   hypotheses, discovery questions, mini proof, and meeting ask.
-version: 1.1.0
+metadata:
+  version: "1.1.0"
 ---
 
 # Cold Call Script Generator

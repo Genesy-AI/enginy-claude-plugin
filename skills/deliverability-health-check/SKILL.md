@@ -1,7 +1,8 @@
 ---
 name: deliverability-health-check
 description: Audit sending health across your Enginy identities and mailboxes — pulls bounce rates, sending volume, and campaign-level bounce/open signals, then verdicts each mailbox healthy / warning / at-risk with remediation. Use when asked "check my deliverability", "are my mailboxes healthy", "why are my emails bouncing", "am I landing in spam", "audit my sending health", "is my domain burned", "my open rate crashed", "should I pause this mailbox", "how do I fix bounces", or before scaling send volume. Fetches identities, mailboxes, identity performance metrics, and campaign analytics; recommends volume ramp-downs, list hygiene, and blocklist cleanup.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Deliverability Health Check

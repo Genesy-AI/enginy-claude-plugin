@@ -9,7 +9,8 @@ description: >
   "forecast this month", or "who's my top rep". Works from Enginy campaigns, CSV, HubSpot,
   or Salesforce. Delivers a markdown analysis by default, with an optional interactive
   dashboard where the client supports artifacts.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # Pipeline Analysis

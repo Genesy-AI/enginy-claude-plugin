@@ -9,7 +9,8 @@ description: >
   new AI Snippets entity where the workspace has the AI split enabled, and falls back
   automatically to a legacy AI Variable when it doesn't. For stored research facts use
   ai-research-builder; for full AI-written messages use ai-message-builder.
-version: 1.3.0
+metadata:
+  version: "1.3.0"
 ---
 
 # AI Snippet Builder — reusable AI copy fragments

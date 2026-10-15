@@ -10,7 +10,8 @@ description: >
   "outbound play for [category]", "analyze [SaaS] market", "what's the pain in [vertical]",
   or any request to understand a SaaS category for sales/growth purposes.
   ALWAYS use this skill when the user is doing market research for outbound or sales enablement.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # SaaS Market Research — Existential Data Point Discovery
