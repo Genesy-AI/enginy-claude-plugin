@@ -1,14 +1,39 @@
 # Enginy for Claude
 
-Find and reach B2B contacts from Claude. Enginy helps B2B sales and prospecting teams build targeted lead lists, enrich contacts, and run outreach campaigns. Search for companies and people that match your ideal customer profile, verify contact information, organize lists, draft email and LinkedIn sequences, handle replies, and review campaign performance in your existing Enginy workspace.
+<img src="./assets/enginy-logo.png" alt="Enginy logo" width="96" height="96">
 
-This plugin bundles 39 Enginy skills and the Enginy remote MCP connector. An Enginy account is required. Your connected account and its permissions determine which records and actions are available.
+Find and reach B2B contacts from Claude. Enginy helps B2B sales and prospecting teams build targeted lead lists, enrich contacts, and run outreach campaigns.
+
+Search for companies and people that match your ideal customer profile, verify contact information, and organize lists. Draft email and LinkedIn sequences, handle replies, and review campaign performance in your existing Enginy workspace.
+
+This plugin bundles 39 Enginy skills and the Enginy remote MCP connector. You need an Enginy account with MCP enabled by your workspace administrator. Your connected account and its permissions determine which records and actions are available.
 
 ## Connect and use
 
-Add Enginy from **Customize > Plugins** in Claude, then open the plugin's **Connectors** tab and connect Enginy with your own account through OAuth. The server is `https://openapi.enginy.ai/mcp`, the same endpoint used by the Enginy connector. If Enginy is already connected, reuse that connection.
+Once Enginy is available in your Claude directory:
 
-In Claude Code, a plugin added on claude.ai syncs automatically, and `/plugin directory` lists Enginy too. The plugin contains Markdown skills, JSON configuration, and a logo; no install scripts, hooks, executables, or embedded credentials.
+1. Add Enginy from **Customize > Plugins**.
+2. Open the plugin's **Connectors** tab and connect Enginy with your own account through OAuth.
+3. Try an [example request](#example-requests).
+
+The server is `https://openapi.enginy.ai/mcp`, the same endpoint used by the Enginy connector. If Enginy is already connected, reuse that connection.
+
+In Claude Code, a plugin added on claude.ai syncs automatically, and `/plugin directory` lists available plugins. The package contains Markdown skills, JSON configuration, and a logo. It has no install scripts, hooks, executables, or embedded credentials.
+
+### Test from source
+
+You can test the package in Claude Code while directory approval is pending. Run these commands in a terminal:
+
+```bash
+git clone https://github.com/Genesy-AI/enginy-claude-plugin.git
+cd enginy-claude-plugin
+claude plugin validate .
+claude --plugin-dir .
+```
+
+Inside that Claude Code session, use `/mcp` to check the Enginy connection and complete OAuth if required. Start with a draft-only request, such as "Draft a three-email sequence for my target persona."
+
+The `--plugin-dir` flag loads the plugin for that session. Local validation checks the package; directory approval and authenticated tool behavior require separate checks.
 
 ## Example requests
 
@@ -21,7 +46,7 @@ Skills retain their existing confirmation steps before sending messages, activat
 
 ## Data handling and optional services
 
-Enginy tools can read and create or update personal data in your workspace, including names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements, not for a fixed period such as 30 days.
+Enginy tools can read, create, or update personal data in your workspace. This includes names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements; there is no fixed 30-day retention period.
 
 Only the Enginy connector is bundled. Some skills can use additional services when requested and available in the user's Claude environment:
 
@@ -29,13 +54,17 @@ Only the Enginy connector is bundled. Some skills can use additional services wh
 - Claap, Modjo, Gong, Chorus, Fireflies, or another connected call-recording service for requested transcript analysis.
 - Claude's web-search and browsing tools for public company websites, LinkedIn profiles, reviews, case studies, and market research, and for URLs supplied by the user. Search queries and requested URLs are sent to the selected web tools and destinations.
 
-These optional services are not installed, authenticated, or granted access by this plugin. They require the user's own available tools and permissions. Their own privacy policies apply. Users can supply their data directly when a connector is unavailable. Some analysis skills can produce a client-rendered dashboard only when the user requests it and the client supports artifacts; Markdown reports are the default.
+These optional services are not installed, authenticated, or granted access by this plugin. They require the user's own available tools and permissions. Their own privacy policies apply. Users can supply their data directly when a connector is unavailable.
+
+Some analysis skills can produce a client-rendered dashboard when the user requests it and the client supports artifacts. Markdown reports are the default.
 
 Enginy is a business service and is not intended for users under 18. See [Privacy policy](https://enginy.ai/privacy-policy), [Terms of service](https://enginy.ai/terms-of-service), [MCP documentation](https://docs.enginy.ai/mcp/overview), and [Support](https://enginy.ai/contact).
 
 ## Troubleshooting
 
-If tools are missing, connect Enginy from the plugin's Connectors tab and check your workspace permissions. Reconnect if OAuth expires. If a particular action is unavailable, report the tool name and the error to Enginy support without sharing credentials. Skills that depend on optional CRM or recording integrations will request the missing data or connection.
+If tools are missing, connect Enginy from the plugin's Connectors tab and check your workspace permissions. Your administrator can check MCP access using the [connection documentation](https://docs.enginy.ai/mcp/overview). Reconnect if OAuth expires.
+
+If a particular action is unavailable, report the tool name and the error to [Enginy support](https://enginy.ai/contact) without sharing credentials. Skills that depend on optional CRM or recording integrations will request the missing data or connection.
 
 ## Skills
 
@@ -55,7 +84,7 @@ If tools are missing, connect Enginy from the plugin's Connectors tab and check 
 **List building & enrichment**
 | Skill | What it does |
 | --- | --- |
-| `list-builder` | Strategy front-door — decides the targeting approach |
+| `list-builder` | Choose the targeting approach before building a list |
 | `build-targeted-lead-list` | Executes the list build end-to-end in AI Finder |
 | `signal-prospector` | Find companies showing hiring/funding/tech signals |
 | `trigger-finder` | Which buying triggers to activate, and how |
@@ -67,7 +96,7 @@ If tools are missing, connect Enginy from the plugin's Connectors tab and check 
 | Skill | What it does |
 | --- | --- |
 | `copywriting-first-touch` | One high-converting cold opener |
-| `copywriting-follow-up` | Bump emails with a genuinely new angle |
+| `copywriting-follow-up` | Bump emails with a new angle |
 | `copywriting-sequence` | Full 3-email sequence, calibrated to seniority |
 | `copywriting-analyzer` | Audit, score, and rewrite existing copy |
 | `cta-designer` | Value-based CTAs instead of "book a call" |
@@ -97,6 +126,10 @@ If tools are missing, connect Enginy from the plugin's Connectors tab and check 
 | `pipeline-analysis` | Pipeline value, conversion, forecast, velocity |
 | `team-performance-review` | Side-by-side rep and sender scorecard |
 | `persona-insights-analysis` | Persona intelligence from call transcripts |
+
+## Maintaining the submission
+
+See [Submission maintenance](docs/submission-maintenance.md) for package checks, listing assets, and handling directory feedback.
 
 ## License
 
