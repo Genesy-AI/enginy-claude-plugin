@@ -22,18 +22,11 @@ In Claude Code, a plugin added on claude.ai syncs automatically, and `/plugin di
 
 ### Test from source
 
-You can test the package in Claude Code while directory approval is pending. Run these commands in a terminal:
+You can test an existing checkout in Claude Code while directory approval is pending. Follow [Claude Code's local plugin instructions](https://code.claude.com/docs/en/plugins/cli-reference) with this repository as the plugin directory.
 
-```bash
-git clone https://github.com/Genesy-AI/enginy-claude-plugin.git
-cd enginy-claude-plugin
-claude plugin validate .
-claude --plugin-dir .
-```
+Use `/mcp` to check the Enginy connection and complete OAuth if required. Start with a draft-only request, such as "Draft a three-email sequence for my target persona."
 
-Inside that Claude Code session, use `/mcp` to check the Enginy connection and complete OAuth if required. Start with a draft-only request, such as "Draft a three-email sequence for my target persona."
-
-The `--plugin-dir` flag loads the plugin for that session. Local validation checks the package; directory approval and authenticated tool behavior require separate checks.
+Local validation checks the package; directory approval and authenticated tool behavior require separate checks.
 
 ## Example requests
 
@@ -126,10 +119,6 @@ If a particular action is unavailable, report the tool name and the error to [En
 | `pipeline-analysis` | Pipeline value, conversion, forecast, velocity |
 | `team-performance-review` | Side-by-side rep and sender scorecard |
 | `persona-insights-analysis` | Persona intelligence from call transcripts |
-
-## Maintaining the submission
-
-See [Submission maintenance](docs/submission-maintenance.md) for package checks, listing assets, and handling directory feedback.
 
 ## License
 
