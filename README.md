@@ -1,6 +1,6 @@
 # Enginy for Claude
 
-<img src="./assets/enginy-logo.png" alt="Enginy logo" width="96" height="96">
+<img src="./.claude-plugin/icon.png" alt="Enginy logo" width="96" height="96">
 
 Find and reach B2B contacts from Claude. Enginy helps B2B sales and prospecting teams build targeted lead lists, enrich contacts, and run outreach campaigns.
 
@@ -39,6 +39,8 @@ Skills retain their existing confirmation steps before sending messages, activat
 
 ## Data handling and optional services
 
+Privacy policy: https://enginy.ai/privacy-policy
+
 Enginy tools can read, create, or update personal data in your workspace. This includes names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements; there is no fixed 30-day retention period.
 
 Only the Enginy connector is bundled. Some skills can use additional services when requested and available in the user's Claude environment:
@@ -51,7 +53,7 @@ These optional services are not installed, authenticated, or granted access by t
 
 Some analysis skills can produce a client-rendered dashboard when the user requests it and the client supports artifacts. Markdown reports are the default.
 
-Enginy is a business service and is not intended for users under 18. See [Privacy policy](https://enginy.ai/privacy-policy), [Terms of service](https://enginy.ai/terms-of-service), [MCP documentation](https://docs.enginy.ai/mcp/overview), and [Support](https://enginy.ai/contact).
+Enginy is a business service and is not intended for users under 18. See [Terms of service](https://enginy.ai/terms-of-service), [MCP documentation](https://docs.enginy.ai/mcp/overview), and [Support](https://enginy.ai/contact).
 
 ## Troubleshooting
 
