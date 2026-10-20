@@ -39,7 +39,7 @@ Skills retain their existing confirmation steps before sending messages, activat
 
 ## Data handling and optional services
 
-Privacy policy: https://enginy.ai/privacy-policy
+[Privacy policy](https://enginy.ai/privacy-policy)
 
 Enginy tools can read, create, or update personal data in your workspace. This includes names, business email addresses, phone numbers, LinkedIn profiles, contact and company records, outreach content, replies, and campaign activity. Requested changes persist in Enginy. The plugin adds no separate datastore or telemetry service. Enginy retains service data according to its privacy policy and applicable customer agreements; there is no fixed 30-day retention period.
 
