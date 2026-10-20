@@ -21,10 +21,5 @@
     "campaigns"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
-  "icon": "./assets/enginy-logo.png",
-  "documentationUrl": "https://docs.enginy.ai/mcp/overview",
-  "supportUrl": "https://enginy.ai/contact",
-  "privacyPolicyUrl": "https://enginy.ai/privacy-policy",
-  "termsOfServiceUrl": "https://enginy.ai/terms-of-service"
+  "mcpServers": "./.mcp.json"
 }
